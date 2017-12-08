@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>My Calculator</title>
+	<!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -14,39 +15,39 @@
 			  </div>
 		</div>
 	</header>
-	<main>
+	<main class="d-flex flex-column">
 		<div class="input">
 		    <input type="text" class="form-control box" id="input" aria-label="Text input with checkbox">
 		</div>
 		<div class="numberBox" >
 			<div class="btn-group " role="group" aria-label="Basic example">
-			  <button type="button" id="btnOne" class="btn btn-secondary">1</button>
-			  <button type="button" id="btnTwo" class="btn btn-secondary">2</button>
-			  <button type="button" id="btnThree" class="btn btn-secondary">3</button>
+			  <button type="button" id="btnOne" class="btn btn-secondary" onclick='numone("1")'>1</button>
+			  <button type="button" id="btnTwo" class="btn btn-secondary" onclick='numtwo("2")'>2</button>
+			  <button type="button" id="btnThree" class="btn btn-secondary" onclick='numthree("3")'>3</button>
 
 		<div>
-			<button type="button" id="btnFour" class="btn btn-secondary">4</button>
-			<button type="button" id="btnFive" class="btn btn-secondary">5</button>
-			<button type="button" id="btnSix" class="btn btn-secondary">6</button>
+			<button type="button" id="btnFour" class="btn btn-secondary" onclick='numfour("4")'>4</button>
+			<button type="button" id="btnFive" class="btn btn-secondary" onclick='numfive("5")'>5</button>
+			<button type="button" id="btnSix" class="btn btn-secondary" onclick='numsix("6")'>6</button>
 		</div>
 		<div>
-			<button type="button" id="btnSeven" class="btn btn-secondary">7</button>
-			<button type="button" id="btnEight" class="btn btn-secondary">8</button>
-			<button type="button" id="btnNine" class="btn btn-secondary">9</button>
+			<button type="button" id="btnSeven" class="btn btn-secondary" onclick='numseven("7")'>7</button>
+			<button type="button" id="btnEight" class="btn btn-secondary" onclick='numeight("8")'>8</button>
+			<button type="button" id="btnNine" class="btn btn-secondary" onclick='numnine("9")'>9</button>
 		</div>
 		<div>
-			<button type="button" id="btnZero" class="btn btn-secondary">0</button>
-			<button type="button" id="btnOne" class="btn btn-secondary">.</button>
-			<button type="button" id="add" class="btn btn-secondary">+</button>
+			<button type="button" id="btnZero" class="btn btn-secondary" onclick='numzero("0")'>0</button>
+			<button type="button" id="btnOne" class="btn btn-secondary" onclick='period(".")'>.</button>
+			<button type="button" id="add" class="btn btn-secondary" onclick='add("+")'>+</button>
 		</div>
 		<div>
-			<button type="button" id="sub"  class="btn btn-secondary">-</button>
-			<button type="button" id="multi"  class="btn btn-secondary">*</button>
-			<button type="button" id="divide"  class="btn btn-secondary">/</button>
+			<button type="button" id="sub"  class="btn btn-secondary" onclick='sub("-")'>-</button>
+			<button type="button" id="multi"  class="btn btn-secondary" onclick='multi("*")'>*</button>
+			<button type="button" id="divide"  class="btn btn-secondary" onclick='divide("/")'>/</button>
 		</div>
 		<div>
-			<button type="button" id="equals" class="btn btn-primary btn-lg equalSign">=</button>
-			<button type="button" id="clear" class="btn btn-primary btn-sm clearSign">C</button>
+			<button type="button" id="equals" class="btn btn-primary btn-lg equalSign" onclick='equal("=")'>=</button>
+			<button type="button" id="clear" class="btn btn-primary btn-sm clearSign" onclick='clear("C")'>C</button>
 		</div>
 	</main>
 		
@@ -55,7 +56,18 @@
 
 
 	<script type="text/javascript">
+		var add = document.querySelector("#add");
+		var sub = document.querySelector("#sub");
+		var multi = document.querySelector("#multi");
+		var divide = document.querySelector("#divide");
+
 		
+
+		var calculate = function(){
+
+
+		}		
+
 
 
 	</script>
